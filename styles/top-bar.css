@@ -1,0 +1,39 @@
+.top-bar {
+  padding-block: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .top-bar {
+    padding-block: 32px;
+  }
+}
+
+.top-bar__logo-link {
+  display: flex;
+}
+
+.top-bar__logo {
+  width: 130px;
+  height: 38px;
+  transition: transform 0.3s;
+  cursor: var(--cursor-mouse);
+}
+
+.top-bar__logo:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 744px) {
+  .top-bar__logo {
+    width: 187px;
+    height: 56px;
+  }
+}
+
+.top-bar__icons {
+  display: flex;
+  gap: 24px;
+}

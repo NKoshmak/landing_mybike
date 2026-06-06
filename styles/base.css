@@ -1,0 +1,30 @@
+:root {
+  --main-text-color: #fff;
+  --main-button-color: #fff;
+  --cursor-mouse: url(../images/icons/Cursor-Mouse-Mice.svg), auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--main-text-color);
+  scroll-behavior: smooth;
+  background-color: #1d1d1d;
+}
+
+.page:has(#menu:target) {
+  overflow: hidden;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  cursor: var(--cursor-mouse);
+}

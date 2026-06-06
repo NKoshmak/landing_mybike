@@ -1,0 +1,118 @@
+.contacts {
+  display: block;
+}
+
+.contacts__content {
+  display: grid;
+  row-gap: 40px;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.contacts__form {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 576px) {
+  .contacts__content {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts__content {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .contacts__form {
+    grid-column: span 5;
+  }
+
+  .information {
+    grid-column: 8 / span 2;
+  }
+}
+
+.contacts__form_input,
+.contacts__form_textarea {
+  width: 100%;
+  display: block;
+  background-color: #f9f9f9;
+  border: none;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  transition:
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.contacts__form_input {
+  border-radius: 40px;
+}
+
+.contacts__form_textarea {
+  border-radius: 16px;
+  height: 160px;
+}
+
+.contacts__form_input::placeholder,
+.contacts__form_textarea::placeholder {
+  color: #7e7e83;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.contacts__button {
+  background-color: #fff;
+  color: #1d1d1d;
+  border-radius: 40px;
+  border: none;
+  padding: 15px 48px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 16px;
+  transition:
+    box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.25s;
+}
+
+.contacts__form_input:hover,
+.contacts__form_textarea:hover,
+.contacts__form_input:focus,
+.contacts__form_textarea:focus,
+.contacts__form_input:active,
+.contacts__form_textarea:active,
+.contacts__button:hover,
+.contacts__button:active {
+  box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
+  background-color: #fff;
+}
+
+.information__title {
+  margin: 0 0 8px;
+  color: #9393a3;
+  font-size: 14px;
+}
+
+.information__text {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.information__text a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,54 @@
+.header {
+  background-image: url(../images/bc-image.png);
+  background-size: cover;
+  background-position: 87% 13%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    background-attachment: scroll;
+  }
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header__bottom {
+  padding-bottom: 40px;
+}
+
+.header__title {
+  margin: 0 0 203px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+@media (min-width: 576px) {
+  .header__title {
+    font-size: 64px;
+  }
+
+  .header__bottom {
+    padding-bottom: 92px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__title {
+    font-size: 80px;
+  }
+}

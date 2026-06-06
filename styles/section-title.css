@@ -1,0 +1,28 @@
+.section-title {
+  margin: 0 0 48px;
+  font-weight: 500;
+  color: var(--main-text-color);
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+}
+
+.section-title--align--left {
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+  }
+}

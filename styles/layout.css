@@ -1,0 +1,23 @@
+.container {
+  padding-inline: 20px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+}
+
+.main__content {
+  display: grid;
+  row-gap: 96px;
+  padding-block: 96px;
+}
+
+@media (min-width: 576px) {
+  .main__content {
+    padding-block: 144px;
+    row-gap: 120px;
+  }
+}

@@ -1,0 +1,34 @@
+/* GSAP initial states — elements animate in via js/animations.js */
+
+.hero-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.08em;
+}
+
+.hero-word__inner {
+  display: inline-block;
+  will-change: transform;
+}
+
+.fade-in-up {
+  will-change: transform, opacity;
+}
+
+.compare__product .product__photo {
+  will-change: transform;
+}
+
+.detail__photo {
+  will-change: clip-path, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-word__inner,
+  .fade-in-up,
+  .compare__product .product__photo,
+  .detail__photo {
+    will-change: auto;
+  }
+}
